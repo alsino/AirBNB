@@ -4,6 +4,6 @@ Als Möglichkeit Informationen hervorzuheben, erlauben "Teasers" Zahlen und Fakt
 ## Komponenten
 * bootstrap (sass)
 * c3.js
-** d3.js
+..* d3.js
 * jQuery
 * Modernizr
