@@ -1,0 +1,8 @@
+teaser/node_modules
+teaser/dist
+teaser/.tmp
+teaser/.sass-cache
+teaser/app/bower_components
+teaser/test/bower_components
+teaser/.editorconfig
+teaser/*.sublime*
