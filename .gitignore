@@ -5,4 +5,5 @@ teaser/.sass-cache
 teaser/app/bower_components
 teaser/test/bower_components
 teaser/.editorconfig
+teaser/app/styles/*.css
 teaser/*.sublime*

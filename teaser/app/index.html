@@ -14,6 +14,9 @@
 
         <!-- build:css({.tmp,app}) styles/main.css -->
         <link rel="stylesheet" href="bower_components/c3/c3.min.css">
+        <link rel="stylesheet" href="bower_components/owlcarousel/owl-carousel/owl.carousel.css">
+        <link rel="stylesheet" href="bower_components/owlcarousel/owl-carousel/owl.theme.css">
+        <link rel="stylesheet" href="bower_components/owlcarousel/owl-carousel/owl.transitions.css">
         <link rel="stylesheet" href="styles/main.css">
         <!-- endbuild -->
 
@@ -27,13 +30,40 @@
         <![endif]-->
 
         <div class="container">
+            <div class="row text-around">
+                <p>Anfang der Artikel hier.</p>
+            </div>
             <ul class="row teaser words-analysis-teaser">
                 <li class="teaser-introduction">
-                    <div class="teaser-content">
+                    <!-- <div class="teaser-content">
                         <h1>Titles Analyse</h1>
                         <p class="lead">Listing titles are an important promotion of an offer. <br />Here are listed the topics they're talking about.</p>
+                    </div> -->
+                    <div class="owl-carousel" id="flats-titles-carousel">
+                        <div>
+                            Spacious room central artist area
+                        </div>
+                        <div>
+                            Cozy Room near Charlottenburg Palace
+                        </div>
+                        <div>
+                            XL Berlin Kreuzkoelln Loft Studio
+                        </div>
+                        <div>
+                            PARADISE DOUBLE LOFT ROOM
+                        </div>
+                        <div>
+                            Luxury URBAN apt on KaDeWe/Ku'Damm
+                        </div>
                     </div>
                 </li>
+            </ul>
+            <div class="row text-around">
+                <p>Die Professionalisierung der AirBnb Angebote lässt sich zunehmend spüren. Denn kann man in der Inseratesnamen zahlreiche Begriffe wie "Luxus", "Loft", Adjektive wie "hübsch" sowie verführerische englische Wörter finden.</p>
+                <p>Auch im Sharing-Economy werden sich die Anbietern in eine heftige Konkurenz bemerkbar machen müssen. Professionelle Fotos, reichliche Bewertungen, möglichst attraktive Titeln und Beschreibungen werden entscheidend für ein erfolgreiches Geschäft.</p>
+                <p>Dementsprechend sind in Berlin die Lage und die emotionalen Eigenschaften einer Wohnung der häufigst benutzte Wortschatz in den Titel eines Angebots. Mehr als 60% der Überschriften erwähnen, in welche Stadtteil bzw. Kiez sich das vermietetes Ort befindet. Allerdings ist die ehemalige Billigkeit der berliner Wohnungsmarkt kein Argument mehr, denn weniger als 1% der Inseratnamen enthalten Informationen zur Preisklasse.</p>
+            </div>
+            <ul class="row teaser words-analysis-teaser">
                 <li class="teaser-row">
                     <div class="col-sm-12">
                         <div class="teaser-content">
@@ -42,11 +72,11 @@
                                 <span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>
                             </p>
                             <h1>7543</h1>
-                            <p class="lead">Taking about the situation.</p>
+                            <p class="lead">Beschreiben die Wohnungslage.</p>
                         </div>
                         <ul class="words-list">
                             <li class="header">
-                                Words for the category “situation”
+                                Wörter erkannt als beschreibend der “Lage”
                                 <span class="glyphicon glyphicon-remove"></span>
                             </li>
                             <li>lage</li>
@@ -188,11 +218,11 @@
                                 <span class="glyphicon glyphicon-fire" aria-hidden="true"></span>
                             </p>
                             <h1>5320</h1>
-                            <p class="lead">Taking about how it feels.</p>
+                            <p class="lead">Benutzen emotionalen Eigenschaften.</p>
                         </div>
                         <ul class="words-list">
                             <li class="header">
-                                Words for the category “feeling”
+                                Wörter erkannt als beschreibend der “emotionale Eigenschaften”
                                 <span class="glyphicon glyphicon-remove"></span>
                             </li>
                             <li>feeling</li>
@@ -293,11 +323,11 @@
                                 <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
                             </p>
                             <h1>4927</h1>
-                            <p class="lead">Descripting the location.</p>
+                            <p class="lead">Sprechen über die Austattung/Features.</p>
                         </div>
                         <ul class="words-list">
                             <li class="header">
-                                Words for the category “situation”
+                                Wörter erkannt als “Deskriptiv”
                                 <span class="glyphicon glyphicon-remove"></span>
                             </li>
                             <li>austattung</li>
@@ -356,11 +386,11 @@
                                 <span class="glyphicon glyphicon-resize-full" aria-hidden="true"></span>
                             </p>
                             <h1>1069</h1>
-                            <p class="lead">Taking about the size.</p>
+                            <p class="lead">Erwähnnen die Größe.</p>
                         </div>
                         <ul class="words-list">
                             <li class="header">
-                                Words for the category “situation”
+                                Wörter erkannt als beschreibend der Größe”
                                 <span class="glyphicon glyphicon-remove"></span>
                             </li>
                             <li>größe</li>
@@ -385,7 +415,7 @@
                                 <span class="glyphicon glyphicon-euro" aria-hidden="true"></span>
                             </p>
                             <h1>35</h1>
-                            <p class="lead">Taking about the price class.</p>
+                            <p class="lead">Handeln sich um die Preisklasse.</p>
                         </div>
                         <ul class="words-list">
                             <li class="header">
@@ -408,9 +438,12 @@
                     </div>
                 </li>
                 <li class="teaser-caption">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis cumque adipisci, distinctio facilis necessitatibus tempora nobis placeat doloremque architecto accusamus odio quidem, perferendis, eos! Dolorem, ullam. Numquam itaque sint nemo.
+                    Die analysierte Texte sind ausschliesslich die Titlen der Inserate. Es wurde listiert, welche wörter haüfig in jede einzelne Kategorie fallen. Jeden Titeln, die ein von diese Wörter enthalt werden gezählt. Es werden nicht jedes Ergebnis manuell überprüft. Die Häufigkeit der Nutzung von bestimmte wörter ist kein wissenschaftliche bzw. wirtschaftliche Beweis der Zunahme einer Professionalisierung der AirBnb Dienst.
                 </li>
             </ul>
+            <div class="row text-around">
+                <p>Ende der Artikel hier.</p>
+            </div>
         </div>
 
         <!-- build:js scripts/vendor.js -->
@@ -434,6 +467,7 @@
         <script src="bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/tab.js"></script>
         <script src="bower_components/d3/d3.min.js"></script>
         <script src="bower_components/c3/c3.min.js"></script>
+        <script src="bower_components/owlcarousel/owl-carousel/owl.carousel.min.js"></script>
         <!-- endbuild -->
 
         <!-- build:js scripts/main.js -->

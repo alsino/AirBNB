@@ -1,3 +1,4 @@
+
 $icon-font-path: '../bower_components/bootstrap-sass-official/vendor/assets/fonts/bootstrap/';
 
 // bower:scss
@@ -113,6 +114,16 @@ $bdrs-size:    2px;
   width: 100%;
 }
 
+// DELETEME
+
+.text-around {
+  @extend %box;
+  margin: 0;
+  padding: 30px;
+}
+
+// DELETEME END
+
 .teaser {
   @extend %box;
   background-color: $whitesmoke;
@@ -192,6 +203,10 @@ $bdrs-size:    2px;
 
     .icon:hover {
       background-size: 90% 90%;
+
+      .glyphicon:before {
+        content: '\e085';
+      }
     }
 
     .glyphicon {
@@ -211,18 +226,17 @@ $bdrs-size:    2px;
   .teaser-caption,
   .teaser-introduction {
     @extend %box;
-    background: darken($whitesmoke, 10%);
     padding: 20px;
   }
 
   .teaser-caption {
+    background: darken($whitesmoke, 10%);
     color: lighten($black, 20%);
-    font-size: 12px;
+    font-size: $font-size-base;
   }
 
   .teaser-introduction {
-    background-size: cover;
-    color: $white;
+    background: $white;
 
     .teaser-content {
       text-align: center;
@@ -272,8 +286,44 @@ $bdrs-size:    2px;
   .col-sm-6 .words-list li:not(.header) {
     width: 50%;
   }
+
+  .owl-item {
+    text-align: center;
+    font-size: $font-size-h2;
+
+    div:before {
+      content: '“';
+    }
+
+    div:after {
+      content: '”';
+    }
+  }
+
+  .owl-theme .owl-controls .owl-page span {
+    background: darken($whitesmoke, 20%);
+  }
+
+  .owl-theme .owl-controls .owl-page.active span,
+  .owl-theme .owl-controls.clickable .owl-page:hover span {
+    background: $primary;
+  }
 }
 
-.words-analysis-teaser .teaser-introduction {
-  background-image: url('../images/teasers/wordsAnalysis.jpg');
+.words-analysis-introduction {
+  .situation {
+    background: #cdeee1;
+  }
+
+  .feeling {
+    background: #f6e4ea;
+  }
+
+  .size {
+    background: #e4f1f6;
+  }
+
+  .technical {
+    background: #f3eadc;
+  }
 }
