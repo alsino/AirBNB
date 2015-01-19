@@ -1,0 +1,231 @@
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+body {
+	font-family: 'Whitney SSm A', 'Whitney SSm B'; font-weight: 400; font-style: normal;
+  color: #565a5c;
+}
+
+nav.navbar {
+	background-color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 0.25em;
+	font-size: 0.8em;
+}
+
+nav.navbar a {
+	color: rgba(0,0,0,0.75);
+	font-family: 'Whitney SSm A', 'Whitney SSm B'; font-weight: 600; font-style: normal;
+}
+
+nav.navbar a:hover {
+	color: rgba(0,0,0,1);
+}
+
+div.jumbotron {
+	background: #007a87 url('../img/overlay.png');
+	color: #fff;
+	padding: 180px 0;
+	margin: 200px 0 40px;
+}
+
+div.jumbotron a {
+  color: #fff;
+  font-weight: 600;
+}
+
+img {
+  width: 100%;
+}
+
+div.jumbotron.first {
+	background-color: #ffb400;
+	margin-top: 0;
+}
+
+h1, h2 {
+	font-family: 'Whitney SSm A', 'Whitney SSm B'; font-weight: 600; font-style: normal;
+}
+
+h1 {
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+	text-shadow: 1px 1px 1px rgba(50, 50, 50, 0.4);
+}
+
+h2 {
+	letter-spacing: 0.05em;
+	font-size: 3.5em;
+	text-shadow: 1px 1px 1px rgba(50, 50, 50, 0.4);
+}
+
+h3 {
+	margin: 2em 0 0.75em 0;
+	font-family: 'Whitney SSm A', 'Whitney SSm B'; font-weight: 600; font-style: normal;
+	font-size: 2em;
+	letter-spacing: 0.05em;
+	color: #ff5a5f;
+}
+
+h4, h5 {
+  margin-top: 2em;
+}
+
+.navbar-brand img {
+	height: 100%;
+}
+
+.navbar {
+	padding: 15px 0;
+}
+
+.navbar.scroll {
+	    -webkit-box-shadow: 1px 1px 1px 0px rgba(50, 50, 50, 0.1);
+    -moz-box-shadow:    1px 1px 1px 0px rgba(50, 50, 50, 0.1);
+    box-shadow:         1px 1px 1px 0px rgba(50, 50, 50, 0.1);
+}
+
+p, ul li {
+	font-family: "freight-text-pro";
+	font-size: 1.1em;
+  line-height: 1.6;
+}
+
+.header h1 {
+
+}
+
+div.aside p {
+	font-size: 0.9em;
+}
+
+div.jumbotron p {
+	letter-spacing: 0.02em;
+	line-height: 1.6;
+	width: 80%;
+	margin-top: 40px;
+	font-size: 1.2em;
+	font-family: 'Whitney SSm A', 'Whitney SSm B'; font-weight: 400; font-style: italic;
+	text-shadow: 1px 1px 1px rgba(50, 50, 50, 0.4);
+}
+
+.btn {
+	font-size: 0.7em !important;
+}
+
+
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: #f5f5f5;
+}
+
+.container .text-muted {
+  margin: 20px 0;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-family: 'Whitney SSm A', 'Whitney SSm B'; font-weight: 400; font-style: normal;
+}
+
+
+/* Slope Graph
+-------------------------------------------------- */
+
+line.slope-line {
+    opacity: 0.6;
+    stroke: black;
+    stroke-width: 1;
+}
+
+line.slope-line.bad {
+    stroke: #d9534f;
+}
+
+line.slope-line.good {
+    stroke: #5cb85c;
+}
+
+text.slope-label {
+    fill: black;
+    font-size: 0.9rem;
+    opacity: 0.7;
+    font-family: 'Whitney SSm A', 'Whitney SSm B'; font-weight: 600; font-style: normal;
+}
+
+text.left_values, text.right_values {
+    opacity: 0.5;
+    font-size: 0.7rem;
+    
+}
+
+#chokepoint line.path_line {
+    opacity: 0.6;
+    shape-rendering: crispEdges;
+    stroke: black;
+    stroke-width: 1;
+}
+
+#chokepoint text {
+    fill: black;
+    font-size: 0.9rem;
+    opacity: 0.7;
+    font-family: 'Whitney SSm A', 'Whitney SSm B'; font-weight: 600; font-style: normal;
+}
+
+#treemap .node {
+	border: solid 1px white;
+	font-size: 0.9rem;
+	padding: 0;
+	overflow: hidden;
+	position: absolute;
+	text-indent: 2px;
+	text-align: left;
+	font-family: 'Whitney SSm A', 'Whitney SSm B'; font-weight: 600; font-style: normal;
+}
+
+line.path_line {
+    opacity: 0.6;
+    shape-rendering: crispEdges;
+    stroke: black;
+    stroke-width: 1;
+}
+
+line.tick {
+    opacity: 0.2;
+    shape-rendering: crispEdges;
+    stroke: black;
+    stroke-width: 1;
+}
+
+text.path-label {
+    fill: black;
+    font-size: 0.9rem;
+    opacity: 0.7;
+    font-family: 'Whitney SSm A', 'Whitney SSm B'; font-weight: 600; font-style: normal;
+}
+
+.axis text {
+    opacity: 0.5;
+    font-size: 0.7rem;
+    font-family: 'Whitney SSm A', 'Whitney SSm B'; font-weight: 600; font-style: normal;
+}
+
+
+

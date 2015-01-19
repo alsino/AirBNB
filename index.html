@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Is sharing caring?</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" type="text/css" href="//cloud.typography.com/6920072/804866/css/fonts.css" />
+        <script src="//use.typekit.net/teu1ctl.js"></script>
+        <script>try{Typekit.load();}catch(e){}</script>
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/main.css">
+
+        <style>
+            body {
+                padding-top: 80px;
+                padding-bottom: 20px;
+            }
+        </style>
+
+        <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+    </head>
+    <body>
+    <nav class="navbar navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="row">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+          <div id="navbar" class="col-md-4 navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="#">Hintergrund<span class="sr-only">(current)</span></a></li>
+              <li><a href="#">Motivation und Intention</a></li>
+              <li><a href="#">Fragestellung</a></li>
+              <li><a href="#">Aktueller Arbeitsstand</a></li>
+              <li><a href="#">Related work</a></li>
+            </ul>
+          </div><!--/.navbar-collapse -->
+        </div>
+      </div>
+    </nav>
+
+    <div class="jumbotron first"> <!-- Header Chokepoint Graph-->
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <h1>Is sharing caring?</h1>
+            <h2>AirBnB und die Wohnraum&shy;knappheit in Berlin</h2>
+            <p>The following microsite is the result from the course »<a href="https://incom.org/workspace/5551">Data Journalism</a>« which took place at the <a href="http://www.fh-potsdam.de/">University of Applied Sciences Potsdam</a> in the <a href="http://www.fh-potsdam.de/studieren/design/">department Design</a> during the winter semester 2014/15.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container"> <!-- container Chokepoint Graph-->
+      <div class="row features">
+        <div class="col-md-8">
+          <h3>Hintergrund</h3>
+          <p>Im Zuge der zunehmenden Verknappung von bezahlbarem Wohnraum in deutschen Großstädten geraten auch zunehmend »<em>Sharing Economy</em>«-Portale wie  AirBnB unter Beschuss. Die Kritik: Sie gießen in Anbetracht der bereits existierenden Wohnungsnot Öl ins Feuer, indem Privatanbieter auf ihnen Unterkünfte zu einem überhöhten Marktpreis anbieten und somit zusätzliche Wohnungen dem Mietmarkt entziehen. Vor allem in New York ist die Kritik an AirBnB zuletzt sehr laut geworden. Aber auch in deutschen Großstädten werden diese Vorwürfe vermehrt angebracht. Neue rechtliche Rahmenbedingungen sollen diesen Missbrauch nun stoppen. So ist es beispielsweise seit Mai 2014 in Berlin verboten, private Wohnungen durch gewerbliche Vermietung ihrem ursprünglichen Zweck zu entfremden (»<em>Zweckentfremdungsverbot</em>«). </p>
+          <h3>Motivation und Intention</h3>
+          <p>Im Dezember 2014 wurde eine von AirBnB in Auftrag gegebene Studie veröffentlicht, in welcher der vermeintlich negative Einfluss der Wohnungsplattform AirBnB auf den Berliner Wohnungsmarkt als verschwindend gering eingeschätzt wurde (GEWOS, 2014). So sollen zwischen September 2013 und August 2014 nur 1.075 Wohnungen, die auf AirBnB angeboten wurden, längerfristig als Ferienwohnungen (mehr als 120 Tage im Jahr) vermietet worden sein. Die entspricht einem Anteil von  0,06% aller Berliner Wohnungen. Auch die Anzahl von Anbietern, die mehr als einer Wohnung vermieten sei mit 10% relativ gering, so heißt es. </p>
+          <h3>Fragestellung</h3>
+          <p>Was in den Ergebnissen der AirBnB-Studie nicht zum Ausdruck kommt, ist die unterschiedliche Wohnsituation in den besonders betroffenen Mikrolagen Berlins (z.B. Friedrichshain, Kreuzberg, Neukölln), also den Stadtbezirken mit einem erhöhten Preisdruck auf dem Wohnungsmarkt. Hier nimmt die angespannte Situation durch eine zunehmende Professionalisierung der Vermietungsverhältnisse weiter zu. Einige Fragen, die sich in diesem Kontext stellen sind somit: Wie viele Wohnungen werden innerhalb eines gegebenen Zeitraums (z.B. ein Monat) in den verschiedenen Berliner Bezirken und v.a. diesen Mikrolagen angeboten und dadurch dem gewöhnlichen Mietmarkt entzogen?  Wieviele Wohnungen stehen in diesen Bezirken Mietsuchenden überhaupt noch bereit? </p>
+          <h3>Aktueller Arbeitsstand</h3>
+          <h4>Daten</h4>
+          <p>Scraping von www.airbnb.de über einen Zeitraum von 14 Tagen. Daten zu Angeboten und anbietenden Nutzern. Insbesondere scrapen wir Daten der folgenden Ketegorien:
+          <ul>
+            <li>Location/ Lage (ca. LatLong)</li>
+            <li>Typ der Unterkunft</li>
+            <li>Preis, Ausstattung, Features und Bewertungen</li>
+            <li>Text-Strings zu Angebots-Namen</li>
+          </ul>
+          </p>
+          <h4>Visualisierungsansätze</h4>
+          <h5>Standorte</h5>
+          <img src="img/AirBnbDataVizIdeen-v3-01.png" />
+          <h5>Städte-Profil</h5>
+          <img src="img/AirBnbDataVizIdeen-v3-02.png" />
+          <h5>Verteilung</h5>
+          <img src="img/AirBnbDataVizIdeen-v3-03.png" />
+          <h5>Netzwerke</h5>
+          <img src="img/AirBnbDataVizIdeen-v3-01-netmap.png" />
+          <h4>Vorläufiger Zeitplan</h4>
+          <p>
+            <ul>
+              <li>Datenrecherche- und Akquise: 1. Januar - 15. Januar</li>
+              <li>Umsetzung: ab 15. Januar</li>
+            </ul>
+          </p>
+          <h3>Related work</h3>
+          <h4>Visualisierungen</h4>
+          <p>
+            <ul>
+              <li><a href="http://www.capital.de/dasmagazin/gewinnen-statt-teilen.html">Capital.de &mdash; Gewinnen Statt Teilen</a></li>
+              <li>Stamen für AirBnB: <a href="http://stamen.com/clients/airbnb">Stamen.com &mdash; Airbnb &mdash; New York and San Francisco, 2008-2011:</a></li>
+              <li>Fusion Brew: <a href="http://goo.gl/WSplFt">How Airbnb used conditional probability models and data visualization to make its search algorithm more location relevant?</a></li>
+              <li>Kelli Anderson: <a href="http://cdn.visualnews.com/wp-content/uploads/2012/01/Infographic-Airbnb-Global-Growth-header.jpg">http://goo.gl/oQM3GH</a></li>
+            </ul>
+          </p>
+          <h4>Praxis- und Forschungsprojekte</h4>
+          <p>
+            <ul>
+              <li>AirBnB-Studie (GEWOS): <a href="http://publicpolicy.airbnb.com/wp-content/uploads/2014/12/AirbnbundderBerlinerWohnungsmarkt.pdf">Airbnb und der Berliner Wohnungsmarkt &mdash; Auswirkungen des Airbnb-Angebots auf die Berliner Wohnraumversorgung</a></li>
+              <li>QZ-Bericht: <a href="http://qz.com/282417/3-things-we-learned-from-airbnbs-proprietary-data/">3 things we learned from Airbnb’s proprietary data</a></li>
+            </ul>
+          </p>
+          <h4>Aktuelle Pressestimmen</h4>
+          <p>
+            <ul>
+              <li><a href="http://www.berliner-zeitung.de/berlin/kommentar-zu-wohnen-und-tourismus-in-berlin-der-airbnb-boom-ist-gut-fuer-das-kiezleben,10809148,29172648.html">Berliner Zeitung &mdash; Der Airbnb-Boom ist gut für das Kiezleben</a></li>
+              <li><a href="http://www.capital.de/dasmagazin/gewinnen-statt-teilen.html">Capital.de &mdash; Gewinnen Statt Teilen</a></li>
+              <li><a href="http://www.faz.net/aktuell/wirtschaft/unternehmen/vermittlungsportal-airbnb-veroeffentlicht-zahlen-fuer-berlin-13314208.html">FAZ.net &mdash; In Berlin vermittelt Airbnb vor allem in Friedrichshain </a></li>
+            </ul>
+          </p>
+        </div>
+        
+      </div>
+      
+    </div> <!-- /container Chokepoint Graph-->
+      
+    <footer class="footer">
+      <div class="container">
+        <p class="text-muted">Ein Projekt von <a href="https://twitter.com/alsinosko">Alsino Skowronnek</a>, <a href="http://www.vogelino.ch/">Lucas Vogel</a> und <a href="http://jonasparnow.de/">Jonas Parnow</a> — Betreuung durch <a href="http://idl.fh-potsdam.de/people/jan-erik-stange/">Jan-Erik Stange</a> und <a href="http://www.michael-hoerz.de/">Michael Hörz</a> — <a href="http://www.fh-potsdam.de/studieren/design/">FH Potsdam</a> — Wintersemester 2014/15</p>
+      </div>
+    </footer>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.1.min.js"><\/script>')</script>
+
+        <script src="js/vendor/bootstrap.min.js"></script>
+        <script type='text/javascript' src="http://d3js.org/d3.v2.js"></script>
+
+        <script src="js/chokepoint.js"></script>
+        <script src="js/treemap.js"></script>
+        <script src="js/linegraph.js"></script>
+        <script src="js/slopegraph.js"></script>
+
+        <script src="js/main.js"></script>
+    </body>
+</html>
