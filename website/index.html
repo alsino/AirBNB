@@ -53,7 +53,7 @@
       </div>
     </nav>
 
-    <div class="jumbotron first"> <!-- Header Chokepoint Graph-->
+    <div class="jumbotron first"> <!-- Header -->
       <div class="container">
         <div class="row">
           <div class="col-md-8">
@@ -63,73 +63,178 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> <!-- /Header -->
 
-    <div class="container"> <!-- container Chokepoint Graph-->
+    <div class="container"> <!-- container Wohnungen -->
       <div class="row features">
         <div class="col-md-8">
-          <h3>Hintergrund</h3>
-          <p>Im Zuge der zunehmenden Verknappung von bezahlbarem Wohnraum in deutschen Großstädten geraten auch zunehmend »<em>Sharing Economy</em>«-Portale wie  AirBnB unter Beschuss. Die Kritik: Sie gießen in Anbetracht der bereits existierenden Wohnungsnot Öl ins Feuer, indem Privatanbieter auf ihnen Unterkünfte zu einem überhöhten Marktpreis anbieten und somit zusätzliche Wohnungen dem Mietmarkt entziehen. Vor allem in New York ist die Kritik an AirBnB zuletzt sehr laut geworden. Aber auch in deutschen Großstädten werden diese Vorwürfe vermehrt angebracht. Neue rechtliche Rahmenbedingungen sollen diesen Missbrauch nun stoppen. So ist es beispielsweise seit Mai 2014 in Berlin verboten, private Wohnungen durch gewerbliche Vermietung ihrem ursprünglichen Zweck zu entfremden (»<em>Zweckentfremdungsverbot</em>«). </p>
-          <h3>Motivation und Intention</h3>
-          <p>Im Dezember 2014 wurde eine von AirBnB in Auftrag gegebene Studie veröffentlicht, in welcher der vermeintlich negative Einfluss der Wohnungsplattform AirBnB auf den Berliner Wohnungsmarkt als verschwindend gering eingeschätzt wurde (GEWOS, 2014). So sollen zwischen September 2013 und August 2014 nur 1.075 Wohnungen, die auf AirBnB angeboten wurden, längerfristig als Ferienwohnungen (mehr als 120 Tage im Jahr) vermietet worden sein. Die entspricht einem Anteil von  0,06% aller Berliner Wohnungen. Auch die Anzahl von Anbietern, die mehr als einer Wohnung vermieten sei mit 10% relativ gering, so heißt es. </p>
-          <h3>Fragestellung</h3>
-          <p>Was in den Ergebnissen der AirBnB-Studie nicht zum Ausdruck kommt, ist die unterschiedliche Wohnsituation in den besonders betroffenen Mikrolagen Berlins (z.B. Friedrichshain, Kreuzberg, Neukölln), also den Stadtbezirken mit einem erhöhten Preisdruck auf dem Wohnungsmarkt. Hier nimmt die angespannte Situation durch eine zunehmende Professionalisierung der Vermietungsverhältnisse weiter zu. Einige Fragen, die sich in diesem Kontext stellen sind somit: Wie viele Wohnungen werden innerhalb eines gegebenen Zeitraums (z.B. ein Monat) in den verschiedenen Berliner Bezirken und v.a. diesen Mikrolagen angeboten und dadurch dem gewöhnlichen Mietmarkt entzogen?  Wieviele Wohnungen stehen in diesen Bezirken Mietsuchenden überhaupt noch bereit? </p>
-          <h3>Aktueller Arbeitsstand</h3>
-          <h4>Daten</h4>
-          <p>Scraping von www.airbnb.de über einen Zeitraum von 14 Tagen. Daten zu Angeboten und anbietenden Nutzern. Insbesondere scrapen wir Daten der folgenden Ketegorien:
-          <ul>
-            <li>Location/ Lage (ca. LatLong)</li>
-            <li>Typ der Unterkunft</li>
-            <li>Preis, Ausstattung, Features und Bewertungen</li>
-            <li>Text-Strings zu Angebots-Namen</li>
-          </ul>
-          </p>
-          <h4>Visualisierungsansätze</h4>
-          <h5>Standorte</h5>
-          <img src="img/AirBnbDataVizIdeen-v3-01.png" />
-          <h5>Städte-Profil</h5>
-          <img src="img/AirBnbDataVizIdeen-v3-02.png" />
-          <h5>Verteilung</h5>
-          <img src="img/AirBnbDataVizIdeen-v3-03.png" />
-          <h5>Netzwerke</h5>
-          <img src="img/AirBnbDataVizIdeen-v3-01-netmap.png" />
-          <h4>Vorläufiger Zeitplan</h4>
-          <p>
-            <ul>
-              <li>Datenrecherche- und Akquise: 1. Januar - 15. Januar</li>
-              <li>Umsetzung: ab 15. Januar</li>
-            </ul>
-          </p>
-          <h3>Related work</h3>
-          <h4>Visualisierungen</h4>
-          <p>
-            <ul>
-              <li><a href="http://www.capital.de/dasmagazin/gewinnen-statt-teilen.html">Capital.de &mdash; Gewinnen Statt Teilen</a></li>
-              <li>Stamen für AirBnB: <a href="http://stamen.com/clients/airbnb">Stamen.com &mdash; Airbnb &mdash; New York and San Francisco, 2008-2011:</a></li>
-              <li>Fusion Brew: <a href="http://goo.gl/WSplFt">How Airbnb used conditional probability models and data visualization to make its search algorithm more location relevant?</a></li>
-              <li>Kelli Anderson: <a href="http://cdn.visualnews.com/wp-content/uploads/2012/01/Infographic-Airbnb-Global-Growth-header.jpg">http://goo.gl/oQM3GH</a></li>
-            </ul>
-          </p>
-          <h4>Praxis- und Forschungsprojekte</h4>
-          <p>
-            <ul>
-              <li>AirBnB-Studie (GEWOS): <a href="http://publicpolicy.airbnb.com/wp-content/uploads/2014/12/AirbnbundderBerlinerWohnungsmarkt.pdf">Airbnb und der Berliner Wohnungsmarkt &mdash; Auswirkungen des Airbnb-Angebots auf die Berliner Wohnraumversorgung</a></li>
-              <li>QZ-Bericht: <a href="http://qz.com/282417/3-things-we-learned-from-airbnbs-proprietary-data/">3 things we learned from Airbnb’s proprietary data</a></li>
-            </ul>
-          </p>
-          <h4>Aktuelle Pressestimmen</h4>
-          <p>
-            <ul>
-              <li><a href="http://www.berliner-zeitung.de/berlin/kommentar-zu-wohnen-und-tourismus-in-berlin-der-airbnb-boom-ist-gut-fuer-das-kiezleben,10809148,29172648.html">Berliner Zeitung &mdash; Der Airbnb-Boom ist gut für das Kiezleben</a></li>
-              <li><a href="http://www.capital.de/dasmagazin/gewinnen-statt-teilen.html">Capital.de &mdash; Gewinnen Statt Teilen</a></li>
-              <li><a href="http://www.faz.net/aktuell/wirtschaft/unternehmen/vermittlungsportal-airbnb-veroeffentlicht-zahlen-fuer-berlin-13314208.html">FAZ.net &mdash; In Berlin vermittelt Airbnb vor allem in Friedrichshain </a></li>
-            </ul>
-          </p>
+          <p>Einleitung, Warum mieten Leute Wohnungen? – Günstiger. Vergleich Hotel/Hostel Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+        </div>
+
+      </div>
+      <div class="row">
+
+        <div class="col-md-8">
+          <img src="http://dummyimage.com/800x400/ffb400/fff&text=Karte" alt="" />
+        </div>
+
+        <div class="col-md-8">
+          <p>Erklärung Karte Text. Inserate gesamt. Bezirke erlären. Wohnungen nach Bevölkerungsdichte erklären. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+        </div>
+
+        <div class="col-md-8">
+          <img src="http://dummyimage.com/800x400/ffb400/fff&text=Keyfacts" alt="">
+          <p>Keyfacts: Angebote absolut gesamt; 3 LORs nennen. Jeweils auch prozentual bzw. pro 1000 Einwohner</p>
+        </div>
+
+      </div>
+      <div class="row">
+
+        <div class="col-md-8">
+          <h3>Preise</h3>
+          <p>Preise Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+        </div>
+
+        <div class="col-md-8">
+          <img src="http://dummyimage.com/800x400/ffb400/fff&text=Diagramm" alt="">
+          <p>Preise Facts. Durchschnitt, Verteilung … (Normalisieren)</p>
         </div>
         
       </div>
       
-    </div> <!-- /container Chokepoint Graph-->
+    </div> <!-- /container Wohnungen -->
+
+    <div class="jumbotron"> <!-- Header Vermieter -->
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <h2>Frühstück für 20 Leute?</h2>
+            <h3>Lorem ipsum dolor sit amet</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container"> <!-- container Wohnungen -->
+      <div class="row">
+        <div class="col-md-8">
+          <p>Wohnungen werden gewerblich vermietet. Verschiedene Indikatoren. XX% haben mehr als eine Wohnung. Wie viele sind die 10%? Durchschnittliche Anzahl. Poweruser: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="col-md-4">
+          <p>Power-User: Männlich/Weiblich</p>
+        </div>
+
+        <div class="col-md-8">
+          <img src="http://dummyimage.com/800x400/ffb400/fff&text=Rechnung" alt="" />
+        </div>
+
+      </div>
+      <div class="row">
+
+        <div class="col-md-8">
+          <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+        </div>
+
+        <div class="col-md-8">
+          <img src="http://dummyimage.com/800x400/ffb400/fff&text=Verteilung" alt="" />
+        </div>
+
+        <div class="col-md-8">
+          <p>Steuern bezahlen? Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+        </div>
+
+        <div class="col-md-8">
+          <img src="http://dummyimage.com/800x400/ffb400/fff&text=Netzwerk" alt="" />
+        </div>
+
+        <div class="col-md-8">
+          <p>Wohnung pflegen, nicht nah beieinander der einzelenen User. Viel herumfahren. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+        </div>
+
+        <div class="col-md-8">
+          <h3>Straßen</h3>
+          <p>Ein weiterer Faktor sind die Angebote besonders in Straßen, die beliebt sind bei Touristen Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+        </div>
+
+        <div class="col-md-8">
+          <img src="http://dummyimage.com/800x400/ffb400/fff&text=StraßenKarte" alt="" />
+        </div>
+
+        <div class="col-md-8">
+          <p>Ein weiterer Faktor sind die Angebote besonders in Straßen, die beliebt sind bei Touristen Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>
+        </div>
+
+        <div class="col-md-8">
+          <img src="http://dummyimage.com/800x400/ffb400/fff&text=StraßeBalken" alt="" />
+        </div>
+
+        <div class="col-md-8">
+          <h3>Wohnungsbeschreibung</h3>
+          <p>Ein weiterer Faktor sind die Angebote besonders in Straßen, die beliebt sind bei Touristen Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+        </div>
+
+        <div class="col-md-8">
+          <img src="http://dummyimage.com/800x400/ffb400/fff&text=Semantik" alt="" />
+        </div>
+
+        <div class="col-md-8">
+          <p>Ein weiterer Faktor sind die Angebote besonders in Straßen, die beliebt sind bei Touristen Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+        </div>
+        
+      </div>
+      
+    </div> <!-- /container Wohnungen -->
+
+    <div class="jumbotron"> <!-- Andere Städte -->
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <h2>Andere Städte</h2>
+            <h3>Lorem ipsum dolor sit amet</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container"> <!-- container Andere Städte -->
+      <div class="row">
+        <div class="col-md-8">
+          <p>Wohnungen werden gewerblich vermietet. Verschiedene Indikatoren. XX% haben mehr als eine Wohnung. Wie viele sind die 10%? Durchschnittliche Anzahl. Poweruser: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+        </div>
+
+        <div class="col-md-8">
+          <img src="http://dummyimage.com/800x400/ffb400/fff&text=KeyFacts" alt="" />
+        </div>
+        
+      </div>
+      
+    </div> <!-- /container Wohnungen -->
+
+    <div class="jumbotron"> <!-- Fun Facts -->
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <h2>Fun Facts</h2>
+            <h3>Lorem ipsum dolor sit amet</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container"> <!-- container Andere Städte -->
+      <div class="row">
+        <div class="col-md-8">
+          <p>Wohnungen werden gewerblich vermietet. Verschiedene Indikatoren. XX% haben mehr als eine Wohnung. Wie viele sind die 10%? Durchschnittliche Anzahl. Poweruser: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+        </div>
+
+        <div class="col-md-8">
+          <img src="http://dummyimage.com/800x400/ffb400/fff&text=FunFacts" alt="" />
+        </div>
+        
+      </div>
+      
+    </div> <!-- /container Wohnungen -->
+
       
     <footer class="footer">
       <div class="container">
