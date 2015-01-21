@@ -67,11 +67,17 @@ h3 {
 	font-family: 'Whitney SSm A', 'Whitney SSm B'; font-weight: 600; font-style: normal;
 	font-size: 2em;
 	letter-spacing: 0.05em;
-	color: #ff5a5f;
+	color: #222;
 }
 
 h4, h5 {
   margin-top: 2em;
+}
+
+h4 {
+  color: #fff;
+  font-size: 2em;
+  font-style: italic;
 }
 
 .navbar-brand img {
@@ -92,6 +98,9 @@ p {
 	font-family: "freight-text-pro";
 	font-size: 17px;
   line-height: 1.7;
+}
+
+img, .row {
   margin: 3em 0;
 }
 
