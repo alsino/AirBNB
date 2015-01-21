@@ -92,6 +92,19 @@ p {
 	font-family: "freight-text-pro";
 	font-size: 17px;
   line-height: 1.7;
+  margin: 3em 0;
+}
+
+.aside p {
+  font-family: 'Whitney SSm A', 'Whitney SSm B';
+  font-size: 16px;
+  line-height: 1.7;
+  margin: 0;
+}
+
+.aside h6 {
+  margin: 0 0 10px;
+  font-size: 13px;
 }
 
 .header h1 {
