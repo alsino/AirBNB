@@ -67,11 +67,17 @@ h3 {
 	font-family: 'Whitney SSm A', 'Whitney SSm B'; font-weight: 600; font-style: normal;
 	font-size: 2em;
 	letter-spacing: 0.05em;
-	color: #ff5a5f;
+	color: #222;
 }
 
 h4, h5 {
   margin-top: 2em;
+}
+
+h4 {
+  color: #fff;
+  font-size: 2em;
+  font-style: italic;
 }
 
 .navbar-brand img {
@@ -88,10 +94,26 @@ h4, h5 {
     box-shadow:         1px 1px 1px 0px rgba(50, 50, 50, 0.1);
 }
 
-p, ul li {
+p {
 	font-family: "freight-text-pro";
-	font-size: 1.1em;
-  line-height: 1.6;
+	font-size: 17px;
+  line-height: 1.7;
+}
+
+img, .row {
+  margin: 3em 0;
+}
+
+.aside p {
+  font-family: 'Whitney SSm A', 'Whitney SSm B';
+  font-size: 16px;
+  line-height: 1.7;
+  margin: 0;
+}
+
+.aside h6 {
+  margin: 0 0 10px;
+  font-size: 13px;
 }
 
 .header h1 {
@@ -116,6 +138,96 @@ div.jumbotron p {
 	font-size: 0.7em !important;
 }
 
+div.facts {
+  text-align: center;
+  font-size: 1.3em;
+  margin: 3em 0;
+}
+
+div.facts h6 {
+  margin: 0;
+  font-size: 1em;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+
+}
+
+div.facts span {
+  background-color: #EFEFEF;
+  display: block;
+  margin: 1em;
+  padding: 2em 0;
+}
+
+div.facts .left span {
+  margin-right: 0;
+}
+
+div.facts .right span {
+  margin-left: 0;
+}
+
+div.facts span strong {
+  display: block;
+  font-size: 2.2em;
+}
+
+div.facts span small {
+  display: block;
+  margin-top: 2em;
+  font-size: 0.5em;
+}
+
+div.facts span small em {
+  font-weight: 700;
+  font-style: normal;
+}
+
+div.deutschland {
+  color: #7f7f7f;
+  text-align: center;
+  font-size: 1em;
+}
+
+div.deutschland span {
+  background-color: #EFEFEF;
+  display: block;
+  margin: 0.5em;
+}
+
+table.rechnung {
+  width: 50%;
+  max-width: 300px;
+  margin: 2em auto;
+}
+
+table.rechnung thead {
+  font-weight: 600;
+}
+
+table.rechnung tr td {
+  padding: 0.5em 5px;
+}
+
+table.rechnung tr td.zahl {
+  text-align: right;
+  font-weight: 600;
+}
+
+table.rechnung tr.summe {
+  border-top: 1px solid #aaa;
+  vertical-align: top;
+}
+
+table.rechnung tr.summe td {
+  padding: 2px 0;
+}
+
+table.rechnung tr.summe td span {
+  padding-top: 10px;
+  display: block;
+  border-top: 1px solid #aaa;
+}
 
 
 /* Sticky footer styles
