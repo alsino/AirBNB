@@ -15,8 +15,13 @@
         <script>try{Typekit.load();}catch(e){}</script>
 
         <link rel="stylesheet" href="css/bootstrap.min.css">
-
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+
+        <link rel="stylesheet" href="css/c3.min.css">
+        <link rel="stylesheet" href="css/owl.carousel.css">
+        <link rel="stylesheet" href="css/owl.theme.css">
+        <link rel="stylesheet" href="css/owl.transitions.css">
+
         <link rel="stylesheet" href="css/main.css">
 
         <style>
@@ -180,9 +185,9 @@
           <img src="http://dummyimage.com/800x400/ffb400/fff&text=Diagramm" alt="">
           <p>Preise Facts. Durchschnitt, Verteilung … (Normalisieren)</p>
         </div>
-        
+
       </div>
-      
+
     </div> <!-- /container Wohnungen -->
 
     <div class="jumbotron"> <!-- Header Vermieter -->
@@ -282,7 +287,7 @@
               </tr>
             </tbody>
           </table>
-          
+
         </div>
 
       </div>
@@ -354,12 +359,429 @@
           <img src="http://dummyimage.com/800x400/ffb400/fff&text=Semantik" alt="" />
         </div>
 
-        <div class="col-md-8">
-          <p>Ein weiterer Faktor sind die Angebote besonders in Straßen, die beliebt sind bei Touristen Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+        <div class="col-md-8 semantik">
+          <ul class="row teaser titles-slider">
+            <li class="teaser-introduction">
+              <!-- <div class="teaser-content">
+                <h1>Titles Analyse</h1>
+                <p class="lead">Listing titles are an important promotion of an offer. <br />Here are listed the topics they're talking about.</p>
+              </div> -->
+              <div class="owl-carousel" id="flats-titles-carousel">
+                <div>
+                  Spacious room central artist area
+                </div>
+                <div>
+                  Cozy Room near Charlottenburg Palace
+                </div>
+                <div>
+                  XL Berlin Kreuzkoelln Loft Studio
+                </div>
+                <div>
+                  PARADISE DOUBLE LOFT ROOM
+                </div>
+                <div>
+                  Luxury URBAN apt on KaDeWe/Ku'Damm
+                </div>
+              </div>
+            </li>
+          </ul>
+          <div class="row text-content">
+            <p>Die Professionalisierung der AirBnb Angebote lässt sich zunehmend spüren. Denn kann man in der Inseratesnamen zahlreiche Begriffe wie "Luxus", "Loft", Adjektive wie "hübsch" sowie verführerische englische Wörter finden.</p>
+            <p>Auch im Sharing-Economy werden sich die Anbietern in eine heftige Konkurenz bemerkbar machen müssen. Professionelle Fotos, reichliche Bewertungen, möglichst attraktive Titeln und Beschreibungen werden entscheidend für ein erfolgreiches Geschäft.</p>
+            <p>Dementsprechend sind in Berlin die Lage und die emotionalen Eigenschaften einer Wohnung der häufigst benutzte Wortschatz in den Titel eines Angebots. Mehr als 60% der Überschriften erwähnen, in welche Stadtteil bzw. Kiez sich das vermietetes Ort befindet. Allerdings ist die ehemalige Billigkeit der berliner Wohnungsmarkt kein Argument mehr, denn weniger als 1% der Inseratnamen enthalten Informationen zur Preisklasse.</p>
+          </div>
         </div>
-        
+        <div class="col-md-8 semantik">
+          <div class="row teaser words-analysis-teaser">
+            <div class="teaser-row">
+              <div class="col-sm-12">
+                <div class="teaser-content">
+                  <div id="location-donut" class="chart"></div>
+                  <p class="icon" data-toggle="tooltip" data-title="64 %">
+                    <span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>
+                  </p>
+                  <h1>7543</h1>
+                  <p class="lead">Lage</p>
+                </div>
+                <ul class="words-list">
+                  <li class="header">
+                    Wörter assoziiert mit der Wortgruppe “Lage”
+                    <span class="glyphicon glyphicon-remove"></span>
+                  </li>
+                  <li>lage</li>
+                  <li>center</li>
+                  <li>centre</li>
+                  <li>central</li>
+                  <li>zentral</li>
+                  <li>zentrum</li>
+                  <li>park</li>
+                  <li>parknähe</li>
+                  <li>parc</li>
+                  <li>brandenburg gate</li>
+                  <li>brandenburg tor</li>
+                  <li>brandenburger gate</li>
+                  <li>brandenburger tor</li>
+                  <li>party</li>
+                  <li>club</li>
+                  <li>bar</li>
+                  <li>prenzlauer berg</li>
+                  <li>prenzlberg</li>
+                  <li>prenzlb</li>
+                  <li>prenzl berg</li>
+                  <li>prenzlauerberg</li>
+                  <li>kreuzberg</li>
+                  <li>kreuz berg</li>
+                  <li>xberg</li>
+                  <li>x berg</li>
+                  <li>x-berg</li>
+                  <li>neukölln</li>
+                  <li>neukoelln</li>
+                  <li>neu koelln</li>
+                  <li>neu kölln</li>
+                  <li>neu köln</li>
+                  <li>neu koeln</li>
+                  <li>mitte</li>
+                  <li>friedrichshain</li>
+                  <li>fshain</li>
+                  <li>friedrichhain</li>
+                  <li>friedrichrichshain</li>
+                  <li>wedding</li>
+                  <li>schöneberg</li>
+                  <li>schoeneberg</li>
+                  <li>charlottenburg</li>
+                  <li>moabit</li>
+                  <li>wilmersdorf</li>
+                  <li>im herzen</li>
+                  <li>heart of</li>
+                  <li>near</li>
+                  <li>nähe</li>
+                  <li>location</li>
+                  <li>lage</li>
+                  <li>kreuzkölln</li>
+                  <li>kreuzköln</li>
+                  <li>kreuzkoeln</li>
+                  <li>kreuz koeln</li>
+                  <li>kreuz köln</li>
+                  <li>kreuz kölln</li>
+                  <li>kreuz koelln</li>
+                  <li>kruezkolln</li>
+                  <li>kreuzb</li>
+                  <li>area</li>
+                  <li>kiez</li>
+                  <li>mitten</li>
+                  <li>platz</li>
+                  <li>mauerpark</li>
+                  <li>penthouse</li>
+                  <li>west</li>
+                  <li>close to</li>
+                  <li>canal</li>
+                  <li>kanal</li>
+                  <li>ku'damm</li>
+                  <li>located</li>
+                  <li>xberg</li>
+                  <li>bergmannkiez</li>
+                  <li>alex</li>
+                  <li>alexa</li>
+                  <li>alexanderplatz</li>
+                  <li>potsdamer</li>
+                  <li>spree</li>
+                  <li>neukolln</li>
+                  <li>kudamm</li>
+                  <li>checkpoint charlie</li>
+                  <li>f'hain</li>
+                  <li>tempelhof</li>
+                  <li>schillerkiez</li>
+                  <li>markt</li>
+                  <li>kurfürstendamm</li>
+                  <li>kuhdamm</li>
+                  <li>tiergarten</li>
+                  <li>ostkreuz</li>
+                  <li>m2</li>
+                  <li>kollwitzplatz</li>
+                  <li>schönes</li>
+                  <li>near</li>
+                  <li>location</li>
+                  <li>lage</li>
+                  <li>gemütliches</li>
+                  <li>place</li>
+                  <li>nahe</li>
+                  <li>penthouse</li>
+                  <li>east</li>
+                  <li>blick</li>
+                  <li>spree</li>
+                  <li>strasse</li>
+                  <li>str</li>
+                  <li>straße</li>
+                  <li>lighthouse</li>
+                  <li>tempelh</li>
+                  <li>tempelhof</li>
+                  <li>tempel hof</li>
+                  <li>nördliche</li>
+                  <li>südliche</li>
+                  <li>noerdliche</li>
+                  <li>suedliche</li>
+                  <li>görlitzerbhf</li>
+                  <li>nahefriedrichshain</li>
+                  <li>viktoriakiez</li>
+                  <li>distance</li>
+                  <li>lichtenb</li>
+                  <li>luftbrücke</li>
+                  <li>local</li>
+                  <li>locale</li>
+                  <li>praktisch</li>
+                  <li>bahn</li>
+                  <li>station</li>
+                  <li>haltestelle</li>
+                  <li>busstop</li>
+                  <li>metro</li>
+                  <li>zob</li>
+                  <li>bvg</li>
+                  <li>allee</li>
+                  <li>quartier</li>
+                </ul>
+              </div>
+              <div class="col-xs-12 col-sm-6">
+                <div class="teaser-content">
+                  <div id="feeling-donut" class="chart"></div>
+                  <p class="icon" data-toggle="tooltip" data-title="45 %">
+                    <span class="glyphicon glyphicon-heart" aria-hidden="true"></span>
+                  </p>
+                  <h1>5320</h1>
+                  <p class="lead">Attraktivität <br />und Emotionalität</p>
+                </div>
+                <ul class="words-list">
+                  <li class="header">
+                    Wörter assoziiert mit der Wortgruppe “Attraktivität und Emotionalität”
+                    <span class="glyphicon glyphicon-remove"></span>
+                  </li>
+                  <li>feeling</li>
+                  <li>feel</li>
+                  <li>boheme</li>
+                  <li>comfort</li>
+                  <li>comfortable</li>
+                  <li>bequem</li>
+                  <li>ruhig</li>
+                  <li>ruhiges</li>
+                  <li>quiet</li>
+                  <li>modern</li>
+                  <li>design</li>
+                  <li>deluxe</li>
+                  <li>luxus</li>
+                  <li>luxurius</li>
+                  <li>luxury</li>
+                  <li>luxerös</li>
+                  <li>luxueux</li>
+                  <li>alternative</li>
+                  <li>alternativ</li>
+                  <li>tourism</li>
+                  <li>tourist</li>
+                  <li>sonnig</li>
+                  <li>hell</li>
+                  <li>helles</li>
+                  <li>nice</li>
+                  <li>schöne</li>
+                  <li>schönes</li>
+                  <li>charming</li>
+                  <li>lovely</li>
+                  <li>great</li>
+                  <li>gemütlich</li>
+                  <li>best</li>
+                  <li>stylish</li>
+                  <li>trendy</li>
+                  <li>new</li>
+                  <li>perfect</li>
+                  <li>hip</li>
+                  <li>style</li>
+                  <li>family</li>
+                  <li>amazing</li>
+                  <li>charmante</li>
+                  <li>cool</li>
+                  <li>sweet</li>
+                  <li>toll</li>
+                  <li>comfy</li>
+                  <li>cute</li>
+                  <li>calm</li>
+                  <li>wunderschöne</li>
+                  <li>wonderful</li>
+                  <li>artist</li>
+                  <li>lively</li>
+                  <li>gorgeous</li>
+                  <li>friendly</li>
+                  <li>oase</li>
+                  <li>charme</li>
+                  <li>designer</li>
+                  <li>cosy</li>
+                  <li>cozy</li>
+                  <li>beautiful</li>
+                  <li>sunny</li>
+                  <li>bright</li>
+                  <li>quiet</li>
+                  <li>gemütliche</li>
+                  <li>stylish</li>
+                  <li>super</li>
+                  <li>trendy</li>
+                  <li>sonniges</li>
+                  <li>grünen</li>
+                  <li>tolle</li>
+                  <li>comfy</li>
+                  <li>freundlichem</li>
+                  <li>jugenstilvilla</li>
+                  <li>сharming</li>
+                  <li>representative</li>
+                  <li>loftstyle</li>
+                  <li>jazzy</li>
+                  <li>klassisch</li>
+                  <li>kunterbund</li>
+                  <li>kunterbunt</li>
+                  <li>süss</li>
+                  <li>entertainment</li>
+                  <li>relaxen</li>
+                  <li>außergewöhnlich</li>
+                  <li>grosszügig</li>
+                  <li>baroque</li>
+                  <li>geschmackvoll</li>
+                  <li>geschmacksvoll</li>
+                  <li>wunder</li>
+                  <li>tranquil</li>
+                </ul>
+              </div>
+              <div class="col-xs-12 col-sm-6">
+                <div class="teaser-content">
+                  <div id="furniture-donut" class="chart"></div>
+                  <p class="icon" data-toggle="tooltip" data-title="42 %">
+                    <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+                  </p>
+                  <h1>4927</h1>
+                  <p class="lead">Austattung <br />und Features</p>
+                </div>
+                <ul class="words-list">
+                  <li class="header">
+                    Wörter assoziiert mit der Wortgruppe “Austattung und Features”
+                    <span class="glyphicon glyphicon-remove"></span>
+                  </li>
+                  <li>austattung</li>
+                  <li>feature</li>
+                  <li>wlan</li>
+                  <li>wifi</li>
+                  <li>internet</li>
+                  <li>bike</li>
+                  <li>fahrrad</li>
+                  <li>garage</li>
+                  <li>private room</li>
+                  <li>privatzimmer</li>
+                  <li>balkon</li>
+                  <li>studio</li>
+                  <li>altbau</li>
+                  <li>bedroom</li>
+                  <li>bett</li>
+                  <li>ferienwohnung</li>
+                  <li>ferinwohnung</li>
+                  <li>rooftop</li>
+                  <li>roof top</li>
+                  <li>floor</li>
+                  <li>light</li>
+                  <li>maisonette</li>
+                  <li>maissonet</li>
+                  <li>garden</li>
+                  <li>terrace</li>
+                  <li>terasse</li>
+                  <li>terrasse</li>
+                  <li>blick</li>
+                  <li>shared</li>
+                  <li>double</li>
+                  <li>dachgeschoss</li>
+                  <li>suite</li>
+                  <li>doppelzimmer</li>
+                  <li>apartment</li>
+                  <li>zimmer</li>
+                  <li>balcony</li>
+                  <li>loft</li>
+                  <li>rooms</li>
+                  <li>floor</li>
+                  <li>furnished</li>
+                  <li>eingang</li>
+                  <li>maisonettewohn</li>
+                  <li>salon</li>
+                  <li>eingerichtet</li>
+                  <li>eingerichtes</li>
+                  <li>badezimmer</li>
+                  <li>decorated</li>
+                </ul>
+              </div>
+              <div class="col-xs-12 col-sm-6">
+                <div class="teaser-content">
+                  <div id="size-donut" class="chart"></div>
+                  <p class="icon" data-toggle="tooltip" data-title="9 %">
+                    <span class="glyphicon glyphicon-resize-full" aria-hidden="true"></span>
+                  </p>
+                  <h1>1069</h1>
+                  <p class="lead">Größe</p>
+                </div>
+                <ul class="words-list">
+                  <li class="header">
+                    Wörter assoziiert mit der Wortgruppe “Größe”
+                    <span class="glyphicon glyphicon-remove"></span>
+                  </li>
+                  <li>größe</li>
+                  <li>spacious</li>
+                  <li>big</li>
+                  <li>groß</li>
+                  <li>klein</li>
+                  <li>large</li>
+                  <li>huge</li>
+                  <li>small</li>
+                  <li>space</li>
+                  <li>qm</li>
+                  <li>m2</li>
+                  <li>m²</li>
+                  <li>sqm</li>
+                </ul>
+              </div>
+              <div class="col-xs-12 col-sm-6">
+                <div class="teaser-content">
+                  <div id="price-donut" class="chart"></div>
+                  <p class="icon" data-toggle="tooltip" data-title="0,3 %">
+                    <span class="glyphicon glyphicon-euro" aria-hidden="true"></span>
+                  </p>
+                  <h1>35</h1>
+                  <p class="lead">Preis</p>
+                </div>
+                <ul class="words-list">
+                  <li class="header">
+                    Wörter assoziiert mit der Wortgruppe “Preis”
+                    <span class="glyphicon glyphicon-remove"></span>
+                  </li>
+                  <li>preis</li>
+                  <li>price</li>
+                  <li>convenient</li>
+                  <li>cheap</li>
+                  <li>günstig</li>
+                  <li>billig</li>
+                  <li>fair price</li>
+                  <li>inexpensive</li>
+                  <li>€</li>
+                  <li>teuer</li>
+                  <li>expensive</li>
+                  <li>bon marché</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="teaser-caption">
+            Die analysierte Texte sind ausschliesslich die Titlen der Inserate. Es wurde listiert, welche wörter haüfig in jede einzelne Kategorie fallen. Jeden Titeln, die ein von diese Wörter enthalt werden gezählt. Es werden nicht jedes Ergebnis manuell überprüft. Die Häufigkeit der Nutzung von bestimmte wörter ist kein wissenschaftliche bzw. wirtschaftliche Beweis der Zunahme einer Professionalisierung der AirBnb Dienst.
+          </div> -->
+        </div>
+
+        <div class="col-md-3 semantik aside">
+          <h6>Über die Zahlen</h6>
+          <p>Die analysierte Texte sind ausschliesslich die Titlen der Inserate. Es wurde listiert, welche wörter haüfig in jede einzelne Kategorie fallen. Jeden Titeln, die ein von diese Wörter enthalt werden gezählt. Es werden nicht jedes Ergebnis manuell überprüft. Die Häufigkeit der Nutzung von bestimmte wörter ist kein wissenschaftliche bzw. wirtschaftliche Beweis der Zunahme einer Professionalisierung der AirBnb Dienst.</p>
+          <a class="words-lists-link words-lists-link-open">
+            <span class="glyphicon glyphicon-list" aria-hidden="true"></span> Wörter-Listen ansehen
+          </a>
+        </div>
+
       </div>
-      
+
     </div> <!-- /container Wohnungen -->
 
     <div class="jumbotron"> <!-- Andere Städte -->
@@ -382,9 +804,9 @@
         <div class="col-md-8">
           <img src="http://dummyimage.com/800x400/ffb400/fff&text=KeyFacts" alt="" />
         </div>
-        
+
       </div>
-      
+
     </div> <!-- /container Wohnungen -->
 
     <div class="jumbotron"> <!-- Fun Facts -->
@@ -407,12 +829,12 @@
         <div class="col-md-8">
           <img src="http://dummyimage.com/800x400/ffb400/fff&text=FunFacts" alt="" />
         </div>
-        
+
       </div>
-      
+
     </div> <!-- /container Wohnungen -->
 
-      
+
     <footer class="footer">
       <div class="container">
         <p class="text-muted">Ein Projekt von <a href="https://twitter.com/alsinosko">Alsino Skowronnek</a>, <a href="http://www.vogelino.ch/">Lucas Vogel</a> und <a href="http://jonasparnow.de/">Jonas Parnow</a> — Betreuung durch <a href="http://idl.fh-potsdam.de/people/jan-erik-stange/">Jan-Erik Stange</a> und <a href="http://www.michael-hoerz.de/">Michael Hörz</a> — <a href="http://www.fh-potsdam.de/studieren/design/">FH Potsdam</a> — Wintersemester 2014/15</p>
@@ -422,12 +844,14 @@
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.1.min.js"><\/script>')</script>
 
         <script src="js/vendor/bootstrap.min.js"></script>
-        <script type='text/javascript' src="http://d3js.org/d3.v2.js"></script>
 
+        <script src="js/d3.min.js"></script>
+        <script src="js/c3.min.js"></script>
         <script src="js/chokepoint.js"></script>
         <script src="js/treemap.js"></script>
         <script src="js/linegraph.js"></script>
         <script src="js/slopegraph.js"></script>
+        <script src="js/owl.carousel.min.js"></script>
 
         <script src="js/main.js"></script>
     </body>
