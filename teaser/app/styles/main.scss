@@ -1,3 +1,5 @@
+$font-family-sans-serif:  'Whitney SSm A', 'Whitney SSm B', Arial, sans-serif;
+$font-family-serif:       'freight-text-pro', "Times New Roman", Times, serif;
 
 $icon-font-path: '../bower_components/bootstrap-sass-official/vendor/assets/fonts/bootstrap/';
 
@@ -100,9 +102,24 @@ body {
 $white:       #fff;
 $whitesmoke:  #f5f5f5;
 $black:       lighten(#000, 30%);
-$primary:     #ff5a5f;
+$primary:     #ff656a;
+$links:       #3e87b2;
+$linkhover:   $primary;
 
 $bdrs-size:    2px;
+
+a {
+  color: $links;
+
+  &:hover {
+    color: $linkhover;
+    text-decoration: none;
+
+    .glyphicon {
+      color: $linkhover;
+    }
+  }
+}
 
 %box {
   border-radius: $bdrs-size;
@@ -114,21 +131,21 @@ $bdrs-size:    2px;
   width: 100%;
 }
 
-// DELETEME
-
-.text-around {
+.text-content {
   @extend %box;
+  font-family: $font-family-serif;
+  font-size: 18px;
   margin: 0;
   padding: 30px;
 }
-
-// DELETEME END
 
 .teaser {
   @extend %box;
   background-color: $whitesmoke;
   color: $black;
   list-style: none;
+  padding: 30px 0 20px;
+  position: relative;
 
   h1,
   h2,
@@ -140,7 +157,7 @@ $bdrs-size:    2px;
     margin: 0;
   }
 
-  li {
+  > div {
     border-radius: 0;
 
     &:first-child {
@@ -154,7 +171,7 @@ $bdrs-size:    2px;
 
   .teaser-content {
     @extend %box;
-    padding: 30px 20px;
+    padding: 10px 20px 30px;
     position: relative;
 
     h1 {
@@ -165,7 +182,7 @@ $bdrs-size:    2px;
     .chart {
       height: 40px;
       position: absolute !important;
-      top: 32px;
+      top: 10px;
       left: 10px;
       width: 40px;
 
@@ -187,6 +204,11 @@ $bdrs-size:    2px;
       padding-left: 70px;
     }
 
+    h1 {
+      font-size: 28px;
+      font-weight: 800;
+    }
+
     .icon {
       @extend %box;
       background-position: center center;
@@ -196,7 +218,7 @@ $bdrs-size:    2px;
       height: 40px;
       left: 20px;
       position: absolute;
-      top: 40px;
+      top: 17px;
       transition: background 100ms ease-out;
       width: 40px;
     }
@@ -210,7 +232,6 @@ $bdrs-size:    2px;
     }
 
     .glyphicon {
-      background-color: $whitesmoke;
       border-radius: 50%;
       margin: 6px 7px 5px;
       padding: 6px 5px 6px 6px;
@@ -219,23 +240,13 @@ $bdrs-size:    2px;
 
   .lead {
     @extend %box;
+    font-size: 18px;
     line-height: 1.2em;
-    margin-top: 12px;
+    margin-top: 8px;
   }
 
-  .teaser-caption,
   .teaser-introduction {
     @extend %box;
-    padding: 20px;
-  }
-
-  .teaser-caption {
-    background: darken($whitesmoke, 10%);
-    color: lighten($black, 20%);
-    font-size: $font-size-base;
-  }
-
-  .teaser-introduction {
     background: $white;
 
     .teaser-content {
@@ -310,20 +321,30 @@ $bdrs-size:    2px;
   }
 }
 
-.words-analysis-introduction {
-  .situation {
-    background: #cdeee1;
-  }
+.teaser-caption {
+  @extend %box;
+  background: $white;
+  color: lighten($black, 20%);
+  font-size: 12px;
+  padding: 20px 30px;
+}
 
-  .feeling {
-    background: #f6e4ea;
-  }
 
-  .size {
-    background: #e4f1f6;
-  }
+.words-lists-link {
+  color: $links;
+  cursor: pointer;
+  padding: 10px 20px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1;
 
-  .technical {
-    background: #f3eadc;
+  &:hover,
+  &:hover .glyphicon {
+    color: $linkhover;
   }
+}
+
+.titles-slider {
+  background: none;
 }
