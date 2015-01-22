@@ -67,19 +67,27 @@
 	$('.icon').click(function openWordsList(event) {
 		var $list = $(event.target).closest('.teaser-content').next('.words-list'),
 			isSelf = $list.hasClass('open');
-		$('.words-list').slideUp().removeClass('open');
-		$('html, body').animate({ scrollTop: $list.prev('.teaser-content').offset().top }, 1000);
+		$('.words-list').slideUp(200).removeClass('open');
 		if (!isSelf) {
-			$list.slideDown();
+			$list.slideDown(200, function() {
+				$('html, body').animate({ scrollTop: $list.prev('.teaser-content').offset().top }, 500);
+			});
 			$list.addClass('open');
 		}
 	});
 
 	$('.glyphicon-remove').click(function closeWordsList(event) {
 		var $list = $(event.target).closest('.words-list');
-		$('html, body').animate({ scrollTop: $list.prev('.teaser-content').offset().top }, 1000);
-		$list.slideUp();
+		$list.slideUp(200, function() {
+			$('html, body').animate({ scrollTop: $list.prev('.teaser-content').offset().top }, 500);
+		});
 		$list.removeClass('open');
+	});
+
+	$('#flats-titles-carousel').owlCarousel({
+		singleItem: true,
+		paginationSpeed: 300,
+		autoPlay: 5000
 	});
 
 })( jQuery, window );
