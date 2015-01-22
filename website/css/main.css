@@ -9,6 +9,17 @@ body {
   color: #565a5c;
 }
 
+a {
+  color: #3e87b2;
+}
+  a:hover {
+    color: #ff656a;
+    text-decoration: none;
+  }
+    a:hover .glyphicon {
+      color: #ff656a;
+    }
+
 nav.navbar {
 	background-color: #fff;
 	text-transform: uppercase;
@@ -227,6 +238,215 @@ table.rechnung tr.summe td span {
   padding-top: 10px;
   display: block;
   border-top: 1px solid #aaa;
+}
+
+/* Semantik teaser styles
+-------------------------------------------------- */
+
+.text-content, .teaser, .teaser h1, .teaser h2, .teaser h3, .teaser h4, .teaser h5, .teaser h6, .teaser .teaser-content, .teaser .teaser-row .icon, .teaser .lead, .teaser .teaser-introduction, .teaser .words-list, .teaser .words-list li, .teaser-caption {
+  border-radius: 2px;
+  box-sizing: border-box;
+  float: left;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.teaser {
+  background-color: #f5f5f5;
+  color: #4d4d4d;
+  font-family: 'Whitney SSm A', 'Whitney SSm B';
+  list-style: none;
+  padding: 30px 0 20px;
+  position: relative;
+  margin-top: 30px;
+}
+
+  .teaser h1, .teaser h2, .teaser h3, .teaser h4, .teaser h5, .teaser h6 {
+    margin: 0;
+  }
+
+  .teaser > div {
+    border-radius: 0;
+  }
+
+    .teaser > div:first-child {
+      border-radius: 2px 2px 0 0;
+    }
+
+    .teaser > div:last-child {
+      border-radius: 0 0 2px 2px;
+    }
+
+  .teaser .teaser-content {
+    padding: 10px 20px 30px;
+    position: relative;
+  }
+
+    .teaser .teaser-content h1 {
+      text-shadow: none;
+      font-size: 40px;
+      line-height: 0.8;
+    }
+
+    .teaser .teaser-content .chart {
+      height: 40px;
+      position: absolute !important;
+      top: 10px;
+      left: 10px;
+      width: 40px;
+    }
+      .teaser .teaser-content .chart .c3-chart-arc text {
+        display: none;
+      }
+      .teaser .teaser-content .chart .c3-chart-arc path {
+        stroke-width: 0;
+      }
+
+  .teaser .teaser-row h1, .teaser .teaser-row p {
+    padding-left: 70px;
+  }
+
+  .teaser .teaser-row h1 {
+    color: #565a5c;
+    font-size: 40px;
+    font-weight: 800;
+  }
+
+  .teaser .teaser-row .icon {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    cursor: pointer;
+    height: 40px;
+    left: 20px;
+    position: absolute;
+    top: 17px;
+    transition: background 100ms ease-out;
+    width: 40px;
+  }
+
+  .teaser .teaser-row .icon:hover {
+    background-size: 90% 90%;
+  }
+
+    .teaser .teaser-row .icon:hover .glyphicon:before {
+      content: '\e085';
+    }
+
+  .teaser .teaser-row .glyphicon {
+    border-radius: 50%;
+    font-size: 14px;
+    margin: 6px 7px 5px;
+    padding: 6px 5px 6px 7px;
+  }
+
+  .teaser .lead {
+    font-family: 'Whitney SSm A', 'Whitney SSm B';
+    font-size: 18px;
+    line-height: 1.2em;
+    margin-top: 8px;
+  }
+
+  .teaser .teaser-introduction {
+    background: #fff;
+  }
+
+    .teaser .teaser-introduction .teaser-content {
+      text-align: center;
+    }
+
+  .teaser .words-list {
+    background: #dcdcdc;
+    display: none;
+    list-style: none;
+    margin-bottom: 20px;
+  }
+
+    .teaser .words-list li {
+      border-bottom: 1px solid #f5f5f5;
+      border-radius: 0;
+      padding: 6px 10px;
+      width: 33.33%;
+    }
+
+    .teaser .words-list .header {
+      background: #ff656a;
+      border-radius: 2px 2px 0 0;
+      color: #f5f5f5;
+      width: 100%;
+    }
+
+    .teaser .words-list .glyphicon-remove {
+      background: none;
+      cursor: pointer;
+      float: right;
+      margin: 0;
+      padding: 2px 0 0;
+    }
+
+    .teaser .words-list .glyphicon-remove:hover {
+      color: #ffcbcd;
+    }
+
+    .teaser .words-list li:last-child {
+      border-bottom: 0;
+      border-radius: 0 0 2px 2px;
+    }
+
+  .teaser .col-sm-6 .words-list li:not(.header) {
+    width: 50%;
+  }
+
+  .teaser .owl-item {
+    text-align: center;
+    font-size: 30px;
+  }
+
+    .teaser .owl-item div:before {
+      content: '“';
+    }
+
+    .teaser .owl-item div:after {
+      content: '”';
+    }
+
+  .teaser .owl-theme .owl-controls .owl-page span {
+    background: #c2c2c2;
+  }
+
+  .teaser .owl-theme .owl-controls .owl-page.active span,
+  .teaser .owl-theme .owl-controls.clickable .owl-page:hover span {
+    background: #ff656a;
+  }
+
+.teaser-caption {
+  background: #fff;
+  color: #808080;
+  font-family: 'freight-text-pro', serif;
+  font-size: 12px;
+  padding: 20px 30px;
+}
+
+.words-lists-link {
+  color: #3e87b2;
+  cursor: pointer;
+  float: left;
+  margin-top: 10px;
+}
+
+  .words-lists-link:hover, .words-lists-link:hover .glyphicon {
+    color: #ff656a;
+  }
+
+.titles-slider {
+  background: none;
+}
+
+.semantik.aside {
+  float: left;
+  margin-top: 40px;
 }
 
 
