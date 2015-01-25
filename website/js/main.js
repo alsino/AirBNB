@@ -55,6 +55,34 @@
         }
     }
 
+    // Initialize a new plugin instance for all
+    // e.g. $('input[type="range"]') elements.
+    $('input[type="range"]').rangeslider({
+
+        polyfill: false,
+
+        onInit: function(position, value) {
+            changeVisibility(value);
+        },
+
+        onSlide: function(position, value) {
+            changeVisibility(value);
+        }
+    });
+
+    var $networkImages = document.getElementsByClassName('network-image');
+    var len_network = $networkImages.length;
+
+    function changeVisibility (n) {
+        var len = len_network,
+            display = 'none';
+
+        while(len--) {
+            status = len >= n ? 'none' : 'block';
+            $networkImages[len].style.display = status;
+        }
+    }
+
     function activateTooltips () {
         $('[data-toggle="tooltip"]').tooltip();
     }
