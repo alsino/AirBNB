@@ -357,48 +357,6 @@ table.rechnung tr.summe td span {
       text-align: center;
     }
 
-  .teaser .words-list {
-    background: #dcdcdc;
-    display: none;
-    list-style: none;
-    margin-bottom: 20px;
-  }
-
-    .teaser .words-list li {
-      border-bottom: 1px solid #f5f5f5;
-      border-radius: 0;
-      padding: 6px 10px;
-      width: 33.33%;
-    }
-
-    .teaser .words-list .header {
-      background: #ff656a;
-      border-radius: 2px 2px 0 0;
-      color: #f5f5f5;
-      width: 100%;
-    }
-
-    .teaser .words-list .glyphicon-remove {
-      background: none;
-      cursor: pointer;
-      float: right;
-      margin: 0;
-      padding: 2px 0 0;
-    }
-
-    .teaser .words-list .glyphicon-remove:hover {
-      color: #ffcbcd;
-    }
-
-    .teaser .words-list li:last-child {
-      border-bottom: 0;
-      border-radius: 0 0 2px 2px;
-    }
-
-  .teaser .col-sm-6 .words-list li:not(.header) {
-    width: 50%;
-  }
-
   .teaser .owl-item {
     text-align: center;
     font-size: 30px;
@@ -447,6 +405,69 @@ table.rechnung tr.summe td span {
 .semantik.aside {
   float: left;
   margin-top: 40px;
+}
+
+#semantik-popup {
+  display: none;
+}
+
+.mfp-content #semantik-popup {
+  display: block;
+}
+
+.white-popup {
+  position: relative;
+  background: #FFF;
+  padding: 20px;
+  width: auto;
+  max-width: 500px;
+  margin: 20px auto;
+}
+
+.words-list {
+    background: #dcdcdc;
+    list-style: none;
+    margin: 22px 0;
+    padding: 0;
+  }
+
+  .words-list li {
+    border-bottom: 1px solid #f5f5f5;
+    border-radius: 0;
+    padding: 6px 10px;
+    width: 49%;
+    display: inline-block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  .words-list .header {
+    background: #ff656a;
+    border-radius: 2px 2px 0 0;
+    color: #f5f5f5;
+    width: 100%;
+  }
+
+  .words-list .glyphicon-remove {
+    background: none;
+    cursor: pointer;
+    float: right;
+    margin: 0;
+    padding: 2px 0 0;
+  }
+
+  .words-list .glyphicon-remove:hover {
+    color: #ffcbcd;
+  }
+
+  .words-list li:last-child {
+    border-bottom: 0;
+    border-radius: 0 0 2px 2px;
+  }
+
+.col-sm-6 .words-list li:not(.header) {
+  width: 50%;
 }
 
 

@@ -1,132 +1,143 @@
 (function( $, window ) {
-    'use strict';
+	'use strict';
 
-    var	$window = $(window),
-    	$document = $(document),
-    	$body = $('body'),
-    	$navbar = $('.navbar');
+	var	$window = $(window),
+		$document = $(document),
+		$body = $('body'),
+		$navbar = $('.navbar');
 
-    var navbar_small = false;
+	var navbar_small = false;
 
-    var scrollPos = 0;
+	var scrollPos = 0;
 
-    $window.scroll(function(){
-    	scrollActions();
-    });
+	$window.scroll(function(){
+		scrollActions();
+	});
 
-    $window.on('load', function() {
-    	scrollActions();
-        activateTooltips();
-        activateSemantikDonuts();
-        activateTitlesCarousel();
-    });
+	$window.on('load', function() {
+		scrollActions();
+		activateTooltips();
+		activateSemantikDonuts();
+		activateTitlesCarousel();
+		activateSemantikPopup();
+	});
 
-    function scrollActions () {
+	function scrollActions () {
 
-    	scrollPos = $document.scrollTop();
+		scrollPos = $document.scrollTop();
 
-    	if(scrollPos > 0) {
-        	$navbar.addClass('scroll');
-        }
-        else {
-        	$navbar.removeClass('scroll');
-        }
+		if(scrollPos > 0) {
+			$navbar.addClass('scroll');
+		}
+		else {
+			$navbar.removeClass('scroll');
+		}
 
-        if(scrollPos > 150)
-        {
-            if(!navbar_small)
-            {
-                navbar_small = true;
-                $navbar.stop().animate({
-                    padding: '0'
-                }, 400);
-            }
-        }
-        else
-        {
-            if(navbar_small)
-            {
-                navbar_small = false;
+		if(scrollPos > 150)
+		{
+			if(!navbar_small)
+			{
+				navbar_small = true;
+				$navbar.stop().animate({
+					padding: '0'
+				}, 400);
+			}
+		}
+		else
+		{
+			if(navbar_small)
+			{
+				navbar_small = false;
 
-                $navbar.stop().animate({
-                    padding: '15px 0'
-                }, 400);
-            }
-        }
-    }
+				$navbar.stop().animate({
+					padding: '15px 0'
+				}, 400);
+			}
+		}
+	}
 
-    function activateTooltips () {
-        $('[data-toggle="tooltip"]').tooltip();
-    }
+	function activateTooltips () {
+		$('[data-toggle="tooltip"]').tooltip();
+	}
 
-    function activateSemantikDonuts () {
-        var defaultDonutOptions = {
-            data: {
-                type : 'donut',
-                labels: false,
-                colors: {
-                    matching: '#ff5a5f',
-                    notMatching: '#dcdcdc'
-                }
-            },
-            legend: {
-                show: false
-            },
-            size: {
-                width: 60,
-                height: 60
-            },
-            interaction: {
-                enabled: false
-            }
-        };
+	function activateSemantikDonuts () {
+		var defaultDonutOptions = {
+			data: {
+				type : 'donut',
+				labels: false,
+				colors: {
+					matching: '#ff5a5f',
+					notMatching: '#dcdcdc'
+				}
+			},
+			legend: {
+				show: false
+			},
+			size: {
+				width: 60,
+				height: 60
+			},
+			interaction: {
+				enabled: false
+			}
+		};
 
-        var optionsLocation = $.extend({}, defaultDonutOptions, true);
-        optionsLocation.bindto = '#location-donut';
-        optionsLocation.data.columns = [
-            ['notMatching', 35.54],
-            ['matching',    64.46]
-        ];
-        window.c3.generate(optionsLocation);
+		var optionsLocation = $.extend({}, defaultDonutOptions, true);
+		optionsLocation.bindto = '#location-donut';
+		optionsLocation.data.columns = [
+			['notMatching', 35.54],
+			['matching',    64.46]
+		];
+		window.c3.generate(optionsLocation);
 
-        var optionsFurniture = $.extend({}, defaultDonutOptions, true);
-        optionsFurniture.bindto = '#furniture-donut';
-        optionsFurniture.data.columns = [
-            ['matching',    42.11],
-            ['notMatching', 57.89]
-        ];
-        window.c3.generate(optionsFurniture);
+		var optionsFurniture = $.extend({}, defaultDonutOptions, true);
+		optionsFurniture.bindto = '#furniture-donut';
+		optionsFurniture.data.columns = [
+			['matching',    42.11],
+			['notMatching', 57.89]
+		];
+		window.c3.generate(optionsFurniture);
 
-        var optionsSize = $.extend({}, defaultDonutOptions, true);
-        optionsSize.bindto = '#size-donut';
-        optionsSize.data.columns = [
-            ['matching',    9.14],
-            ['notMatching', 90.86]
-        ];
-        window.c3.generate(optionsSize);
+		var optionsSize = $.extend({}, defaultDonutOptions, true);
+		optionsSize.bindto = '#size-donut';
+		optionsSize.data.columns = [
+			['matching',    9.14],
+			['notMatching', 90.86]
+		];
+		window.c3.generate(optionsSize);
 
-        var optionsFeeling = $.extend({}, defaultDonutOptions, true);
-        optionsFeeling.bindto = '#feeling-donut';
-        optionsFeeling.data.columns = [
-            ['matching',    45.47],
-            ['notMatching', 54.53]
-        ];
-        window.c3.generate(optionsFeeling);
+		var optionsFeeling = $.extend({}, defaultDonutOptions, true);
+		optionsFeeling.bindto = '#feeling-donut';
+		optionsFeeling.data.columns = [
+			['matching',    45.47],
+			['notMatching', 54.53]
+		];
+		window.c3.generate(optionsFeeling);
 
-        var optionsPrice = $.extend({}, defaultDonutOptions, true);
-        optionsPrice.bindto = '#price-donut';
-        optionsPrice.data.columns = [
-            ['matching',    1],
-            ['notMatching', 99.7],
-        ];
-        window.c3.generate(optionsPrice);
-    }
+		var optionsPrice = $.extend({}, defaultDonutOptions, true);
+		optionsPrice.bindto = '#price-donut';
+		optionsPrice.data.columns = [
+			['matching',    1],
+			['notMatching', 99.7],
+		];
+		window.c3.generate(optionsPrice);
+	}
 
-    function activateTitlesCarousel () {
-        $('#flats-titles-carousel').owlCarousel({
-            singleItem: true,
-            paginationSpeed: 300,
-            autoPlay: 5000
-        });
-    }
+	function activateTitlesCarousel () {
+		$('#flats-titles-carousel').owlCarousel({
+			singleItem: true,
+			paginationSpeed: 300,
+			autoPlay: 5000
+		});
+	}
+
+	function activateSemantikPopup () {
+		$('a.words-lists-link').magnificPopup({
+			items: {
+			  src: $('#semantik-popup')
+			},
+			type: 'inline'
+		});
+	}
+
 })( jQuery, window );
