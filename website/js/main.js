@@ -226,17 +226,17 @@
 		optionsPriceDistribution.tooltip.contents = function (d) {
 			if (d[0].value > 1) {
 				return '<div class="custom-tooltip">' +
-					'Es gibt ' + d[0].value + ' Angebote, die ' + d[0].index + ' € kosten' +
+					'Es gibt ' + d[0].value + ' Angebote, die ' + d[0].index + '€ kosten' +
 				'</div>';
 			}
 			else if (d[0].value === 1) {
 				return '<div class="custom-tooltip">' +
-					'Es gibt nur ein Angebot, das ' + d[0].index + ' € kostet' +
+					'Es gibt nur ein Angebot, das ' + d[0].index + '€ kostet' +
 				'</div>';
 			}
 			else {
 				return '<div class="custom-tooltip">' +
-						'Es gibt kein Angebot, das ' + d[0].index + ' € kostet' +
+						'Es gibt kein Angebot, das ' + d[0].index + '€ kostet' +
 					'</div>';
 			}
 		};
