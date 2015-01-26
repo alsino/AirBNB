@@ -36,6 +36,10 @@ nav.navbar a:hover {
 	color: rgba(0,0,0,1);
 }
 
+nav.navbar .container .row {
+  margin: 0;
+}
+
 div.jumbotron {
 	background: #007a87 url('../img/overlay.png');
 	color: #fff;
