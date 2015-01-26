@@ -189,6 +189,7 @@
 			},
 			padding: {
 				top: 20,
+				right: 10,
 				bottom: 20,
 				left: 25
 			},
@@ -219,6 +220,7 @@
 		optionsPriceDistribution.axis.x.label = 'Preis';
 		optionsPriceDistribution.axis.y.tick.format = roundMe;
 		optionsPriceDistribution.axis.x.tick.format = roundMe;
+		optionsPriceDistribution.axis.x.tick.values = [20,40,60,80,100,120,140,160,180,200];
 		optionsPriceDistribution.data.columns = [[optionsPriceDistribution.axis.x.label, 0, 0, 0, 0, 0, 0, 0, 0, 2, 11, 21, 4, 12, 7, 13, 57, 17, 17, 35, 31, 152, 22, 64, 53, 47, 395, 49, 61, 121, 168, 539, 48, 100, 86, 64, 631, 92, 58, 130, 301, 779, 52, 123, 74, 88, 752, 49, 14, 125, 305, 608, 36, 88, 52, 75, 391, 53, 69, 96, 226, 515, 20, 54, 42, 50, 374, 28, 37, 85, 221, 382, 7, 34, 17, 28, 314, 17, 34, 38, 135, 338, 4, 15, 14, 33, 177, 3, 11, 33, 84, 201, 0, 12, 6, 2, 97, 6, 10, 15, 99, 187, 3, 0, 2, 5, 35, 4, 2, 4, 19, 61, 3, 2, 0, 4, 21, 3, 1, 5, 23, 125, 1, 1, 1, 2, 29, 2, 2, 2, 14, 38, 10, 0, 1, 8, 23, 0, 4, 1, 9, 42, 2, 0, 1, 2, 21, 1, 1, 2, 16, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]];
 		optionsPriceDistribution.regions = [
 			{axis: 'x', start: 8, end: 153, class: 'inserate-exists'}
@@ -245,14 +247,15 @@
 
 		var optionsUsersDistribution = $.extend({}, defaultBarchartOptions, true);
 		optionsUsersDistribution.bindto = '#users-chart';
-		optionsUsersDistribution.axis.y.label = 'Anzahl Nutzer';
+		optionsUsersDistribution.axis.y.label = 'Anzahl Anbieter';
 		optionsUsersDistribution.axis.x.label = 'Durchschnitt an Schlafplätze';
-		optionsUsersDistribution.axis.x.tick.centered = true;
+		optionsUsersDistribution.axis.x.min = 1;
+		optionsUsersDistribution.axis.x.tick.values = [2,4,6,8,10,12,14];
 		optionsUsersDistribution.data.columns = [[optionsUsersDistribution.axis.x.label, 0,749,4657,1397,1779,386,241,46,40,5,10,5,1,1,1,4]];
 		optionsUsersDistribution.padding.left = 35;
 		optionsUsersDistribution.tooltip.contents = function (d) {
 			return '<div class="custom-tooltip">' +
-				d[0].value + ' Nutzer können durchschnittlich ' + d[0].index + ' Schlafplätze anbieten' +
+				d[0].value + ' Anbietern können durchschnittlich ' + d[0].index + ' Schlafplätze anbieten' +
 			'</div>';
 		};
 
