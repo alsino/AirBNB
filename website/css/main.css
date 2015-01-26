@@ -470,6 +470,26 @@ table.rechnung tr.summe td span {
   width: 50%;
 }
 
+/* Barcharts styles
+-------------------------------------------------- */
+
+.c3-region {
+  fill: #c9c9c9;
+}
+
+.c3 text {
+  fill: gray;
+}
+
+.c3 line, .c3 path {
+  stroke: #c9c9c9;
+}
+
+.custom-tooltip {
+  background: rgba(0,0,0,.6);
+  padding: 6px 12px;
+  color: #fff;
+}
 
 /* Sticky footer styles
 -------------------------------------------------- */
