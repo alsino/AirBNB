@@ -244,6 +244,28 @@ table.rechnung tr.summe td span {
   border-top: 1px solid #aaa;
 }
 
+/* Rangeslider override
+-------------------------------------------------- */
+.rangeslider,
+.rangeslider__fill,
+.rangeslider__handle {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.rangeslider__handle {
+  border-color: lightgray;
+  background: whitesmoke;
+}
+
+.rangeslider__handle:after {
+  background: lightgray;
+}
+
+.rangeslider__fill {
+  background-color: #ff656a;
+}
+
 /* Semantik teaser styles
 -------------------------------------------------- */
 
