@@ -23,6 +23,8 @@
         <link rel="stylesheet" href="css/owl.transitions.css">
         <link rel="stylesheet" href="css/magnific-popup.css">
 
+        <link rel="stylesheet" href="css/rangeslider.css">
+
         <link rel="stylesheet" href="css/main.css">
 
         <style>
@@ -265,11 +267,11 @@
                 <td class="zahl">+ 24</td>
               </tr>
               <tr>
-                <td>Juliana</td>
+                <td>Berlin Aspire</td>
                 <td class="zahl">+ 24</td>
               </tr>
               <tr>
-                <td>Berlin Aspire</td>
+                <td>Juliana</td>
                 <td class="zahl">+ 24</td>
               </tr>
               <tr>
@@ -311,11 +313,26 @@
       <div class="row">
 
         <div class="col-md-8">
-          <img src="img/top4.png" alt="" />
+          <div class="network">
+            <img src="img/network01.png" class="network-image base" title="Top 1 User" style="z-index: 0" />
+            <img src="img/network02.png" class="network-image overlay" title="Top 2 User" style="z-index: 1" />
+            <img src="img/network03.png" class="network-image overlay" title="Top 3 User" style="z-index: 2" />
+            <img src="img/network04.png" class="network-image overlay" title="Top 4 User" style="z-index: 3" />
+            <img src="img/network05.png" class="network-image overlay" title="Top 5 User" style="z-index: 4; display: none;" />
+            <img src="img/network06.png" class="network-image overlay" title="Top 6 User" style="z-index: 5; display: none;" />
+            <img src="img/network07.png" class="network-image overlay" title="Top 7 User" style="z-index: 6; display: none;" />
+            <img src="img/network08.png" class="network-image overlay" title="Top 8 User" style="z-index: 7; display: none;" />
+            <img src="img/network09.png" class="network-image overlay" title="Top 9 User" style="z-index: 8; display: none;" />
+            <img src="img/network10.png" class="network-image overlay" title="Top 10 User" style="z-index: 9; display: none;" />
+          </div>
+
+          <input type="range" min="1" max="10" step="1" value="3">
+
         </div>
-        <div class="col-md-3 aside">
+        <div class="col-md-3 col-md-offset-1 aside">
           <h6>Bilderklärung</h6>
           <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat</p>
+          <img src="img/network-berlin.png" alt="Berlin Übersicht">
         </div>
 
       </div>
@@ -868,13 +885,11 @@
 
         <script src="js/d3.min.js"></script>
         <script src="js/c3.min.js"></script>
-        <script src="js/chokepoint.js"></script>
-        <script src="js/treemap.js"></script>
-        <script src="js/linegraph.js"></script>
-        <script src="js/slopegraph.js"></script>
         <script src="js/owl.carousel.min.js"></script>
+        <script src="js/rangeslider.min.js"></script>
         <script src="js/jquery.magnific-popup.min.js"></script>
 
         <script src="js/main.js"></script>
+
     </body>
 </html>

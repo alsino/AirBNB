@@ -601,4 +601,16 @@ text.path-label {
 }
 
 
+.network .base {
+   position: relative;
+   top: 0;
+   left: 0;
+}
+
+.network .overlay{
+   position: absolute;
+   top: 0;
+   left: 0;
+}
+
 
